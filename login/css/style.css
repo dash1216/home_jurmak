@@ -207,7 +207,7 @@ a:hover{
 		justify-content: center;
 	}
 }
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1200px){
 	.container{
 		grid-template-columns: 1fr;
 	}
