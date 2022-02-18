@@ -196,18 +196,16 @@ a:hover{
 	.container{
 		grid-template-columns: 1fr;
 	}
-
-	
-
 	.wave{
 		display: none;
 	}
 
 	.login-content{
 		justify-content: center;
+		
 	}
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1000px){
 	.container{
 		grid-template-columns: 1fr;
 	}
@@ -220,8 +218,112 @@ a:hover{
 		display: none;
 	}
 
-	.login-content{
+	.login-content .img{
 		justify-content: center;
+		display: none;
+	}
+	
+	
+}
+@media screen and (max-width: 1000px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.login .illustration svg {
+		display: none;
+	  }
+
+	.wave{
+		display: none;
+	}
+
+	.login-content .img{
+		justify-content: center;
+		display: none;
+	}
+	
+	
+}
+@media screen and (max-width: 450px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.login .illustration svg {
+		display: none;
+	  }
+
+	.wave{
+		display: none;
+	}
+
+	.login .login-content{
+		position: absolute;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		z-index: 1;
+		bottom: 200px;
+		left: 20px;
+		width: 10%;
+		height: 50%;
+		
 	}
 	
 }
+@media screen and (max-width: 850px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.login .illustration svg {
+		display: none;
+	  }
+
+	.wave{
+		display: none;
+	}
+
+	.login .login-content{
+		position: absolute;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		z-index: 1;
+		bottom: 200px;
+		left: 180px;
+		width: 10%;
+		height: 60%;
+		
+	}
+	
+}
+@media screen and (max-width: 1500px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img {
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login .login-content{
+		position: absolute;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+		z-index: 1;
+		bottom: 60px;
+		left: 70px;
+		width: 10%;
+		height: 60%;
+		
+	}
+	
+}
+
