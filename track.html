@@ -7,71 +7,332 @@
     <title>Track_shalgah</title>
     <link rel="stylesheet" href="css/track_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/font-awesome.css"> 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    
+    <link id="favicon" rel="icon" href="assets/images/favicon_new.ico" type="image/x-icon" />
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800" rel="stylesheet" />  
+    <link rel="stylesheet" href="css/style.css">  
 </head>
 <body>
     
-    <form action="#" method="get" class="container mt-5" target="_blank">
-        <div class="d-flex justify-content-center row">
-            
-                <br><br><br>
-            
+    <div class="home-text1">
+        <h2>12356789 дугаартай захиалгын мэдээлэл</h2>
+        </div>
             <div class="img_track">
                 <img src="img/change/faq-img.svg">
                 </div>
         </div>
     </div>
-    </form>
-    <table class="table table-striped">
-        <div class="font"><h2>Захиалагчийн байршлын мэдээлэл</h2></div><br>
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Захиалагчийн дугаар</th>
-            <th scope="col">Захиалагийн дугаар</th>
-            <th scope="col">Статус</th>
-            <th scope="col">Хаанаас</th>
-            <th scope="col">Хаана</th>
-            <th scope="col">Огноо</th>
-            <th scope="col">Бүтээгдэхүүн</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td><span class="badge badge-success">Ирсэн</span></td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td><span class="badge badge-info">Хөдөлсөн</span></td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-            <td>@twitter</td>
-          </tr>
-        </tbody>
-      </table>
+    <br><br><br>
+    <div id="div_shipment" class="row" style="height: 100%;">
+        <div class="col-md-4 col-sm-12" style="margin-bottom:30px;">
+            <div class="card" style="margin-bottom:0px; height:100%;">
+                <div class="card-block user-detail-card" style="padding-bottom:0px;">
+                    <div class="lb_title" style="border-bottom-color:#B4B4B4;">
+                        <i class="fas fa-truck bg-c-green" style="width:30px; height:30px; font-size:16px;"></i>
+                        Ачааны мэдээлэл
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 m-b-20">
+                            <table class="table table-hover table-borderless" style="width: 100%; cursor:default;">
+                                <tbody><tr>
+                                    <td id="shipment_tracking" style="font-weight: 600; color: #2792E9; font-size: 14px;">Tracking #: 12356789</td>
+                                </tr>
+                                <tr>
+                                    <td id="shipment_so" style="font-weight: 600; font-size: 14px;">Захиалгын #: 123456</td>
+                                </tr>
+                                <tr>
+                                    <td id="po_number_calc">PO #: </td>
+                                </tr>
+                                <tr>
+                                    <td id="shipment_origin">Хаанаас: Gangham, Seoul, KR</td>
+                                </tr>
+                    
+                                <tr>
+                                    <td id="shipment_dest">Хаашаа: Техник Импорт - Ulaanbaatar, MN</td>
+                                </tr>     
+                                <tr>
+                                    <td id="equipment_number">Тээврийн хэрэгслийн дугаар: SAIKU123456-1</td>
+                                </tr>  
+                                <tr>
+                                    <td id="equipment_type">Тээврийн бүтээгдэхүүн: Кнтр 40' HC</td>
+                                </tr>                                                         
+                            </tbody></table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8 col-sm-1
+        " style="margin-bottom:30px;">
+            <div class="card" style="margin-bottom:0px; height:100%;">
+                <div class="card-block user-detail-card" style="padding-bottom:0px;">
+                    <div class="lb_title" style="border-bottom-color:#B4B4B4;">
+                        <i class="fas fa-road bg-c-green" style="width:30px; height:30px; font-size:16px;"></i>
+                        Замын мэдээ
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 m-b-20">
+                            <div id="action_list" class="col-md-12 timeline-dot">
+                                <div id="road_news_table10" class="social-timelines p-relative">
+                                    <div class="row timeline-right "><div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left-arrived"
+                                                ><i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Gangham, Seoul, KR</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4" p-b-15="">
+                                    <div class="row">
+                                        <div style="margin-top: 7px;" class="col-6">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Хөдөлсөн</h6>
+                                        </div>
+                                        <div style="margin-top: 7px;" class="col-6">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-07-14</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-b-15">
+                                    <div style="margin-top: 7px;">
+                                        <h6 style="font-size: 13px; font-style: italic; display: inline-block;">
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="road_news_table11" class="social-timelines p-relative">
+                            <div class="row timeline-right ">
+                                <div class="col-5" p-b-15="">
+                                    <div class="row">
+                                        <div style="width: 60px; position: relative;" class="socials-right">
+                                            <div class="social-timelines-left-arrived">
+                                                <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Xingang, CN</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4" p-b-15="">
+                                    <div class="row">
+                                        <div style="margin-top: 7px;" class="col-6">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Ирсэн</h6>
+                                        </div>
+                                        <div style="margin-top: 7px;" class="col-6">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-07-18</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 p-b-15">
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">
+                                                </h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="road_news_table12" class="social-timelines p-relative">
+                                    <div class="row timeline-right "><div class="col-5" p-b-15="">
+                                        <div class="row"
+                                        ><div style="width: 60px; position: relative;" class="socials-right">
+                                            <div class="social-timelines-left-arrived">
+                                                <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;">
+                                                </i>
+                                            </div>
+                                        </div>
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Xingang, CN</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4" p-b-15="">
+                                    <div class="row">
+                                        <div style="margin-top: 7px;" class="col-6">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Хөдөлсөн</h6>
+                                        </div><div style="margin-top: 7px;" class="col-6"><h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-08-25</h6></div></div></div><div class="col-3 p-b-15"><div style="margin-top: 7px;"><h6 style="font-size: 13px; font-style: italic; display: inline-block;"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="road_news_table13" class="social-timelines p-relative">
+                                <div class="row timeline-right ">
+                                    <div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left-arrived">
+                                                    <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Замын-Үүд, MN</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" p-b-15="">
+                                        <div class="row">
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Ирсэн</h6>
+                                            </div>
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-08-30</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-b-15">
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="road_news_table14" class="social-timelines p-relative">
+                                <div class="row timeline-right ">
+                                    <div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left-arrived">
+                                                    <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;"></i>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Замын-Үүд, MN</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" p-b-15="">
+                                        <div class="row">
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Хөдөлсөн</h6>
+                                            </div>
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-08-31</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-b-15">
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="road_news_table15" class="social-timelines p-relative">
+                                <div class="row timeline-right ">
+                                    <div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left-arrived">
+                                                    <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Техник Импорт - Ulaanbaatar, MN</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" p-b-15="">
+                                        <div class="row">
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Ирсэн</h6>
+                                            </div>
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-09-06</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-b-15">
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="road_news_table16" class="social-timelines p-relative">
+                                <div class="row timeline-right ">
+                                    <div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left-arrived">
+                                                    <i class="img-radius timeline-icon fa fa-check-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top: 5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #93BE52; margin-right: 10px; align-items: center; z-index: 1;">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Улаанбаатар, MN</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" p-b-15="">
+                                        <div class="row">
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">Ирсэн</h6>
+                                            </div>
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block;">2021-09-02</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-b-15">
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block;">
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="road_news_table7" class="social-timelines p-relative">
+                                <div class="row timeline-right ">
+                                    <div class="col-5" p-b-15="">
+                                        <div class="row">
+                                            <div style="width: 60px; position: relative;" class="socials-right">
+                                                <div class="social-timelines-left">
+                                                    <i class="img-radius timeline-icon fa fa-square-o" style="background-color: #fff; display: inline-flex; float: left; width: 48px; height: 25px; margin-top:5px; border: none; justify-content: center; vertical-align: middle; font-size: 20px; color: #2F9599; margin-right: 10px; align-items: center; z-index: 1;">
+                                                    </i>
+                                                </div>
+                                            </div>
+                                            <div style="margin-top: 7px;">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Улаанбаатар, MN</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4" p-b-15="">
+                                        <div class="row">
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;">Хөдөлнө</h6>
+                                            </div>
+                                            <div style="margin-top: 7px;" class="col-6">
+                                                <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;"></h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 p-b-15">
+                                        <div style="margin-top: 7px;">
+                                            <h6 style="font-size: 13px; font-style: italic; display: inline-block; color:#A5A5A5;"></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script src="js/track.min.js"></script>
 </body>
 </html>
